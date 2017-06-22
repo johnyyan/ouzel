@@ -3,6 +3,10 @@
 
 #pragma once
 
+#include "core/CompileConfig.h"
+
+#if OUZEL_SUPPORTS_DIRECT3D12
+
 #include <vector>
 #include <d3d12.h>
 #include "graphics/ShaderResource.h"
@@ -36,3 +40,5 @@ namespace ouzel
         };
     } // namespace graphics
 } // namespace ouzel
+
+#endif
