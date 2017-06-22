@@ -379,6 +379,24 @@
     <ClCompile Include="..\ouzel\audio\dsound\SoundDS.cpp">
       <Filter>audio\dsound</Filter>
     </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\BlendStateResourceD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\BufferResourceD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\MeshBufferResourceD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\RendererD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\ShaderResourceD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ouzel\graphics\direct3d12\TextureResourceD3D12.cpp">
+      <Filter>graphics\direct3d12</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ouzel\ouzel.h" />
@@ -853,6 +871,36 @@
     <ClInclude Include="..\ouzel\graphics\opengl\TexturePSGL4.h">
       <Filter>graphics\opengl</Filter>
     </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\BlendStateResourceD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\BufferResourceD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\ColorPSD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\ColorVSD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\MeshBufferResourceD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\RendererD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\ShaderResourceD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\TexturePSD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\TextureResourceD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ouzel\graphics\direct3d12\TextureVSD3D12.h">
+      <Filter>graphics\direct3d12</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="events">
@@ -917,6 +965,9 @@
     </Filter>
     <Filter Include="audio\dsound">
       <UniqueIdentifier>{47d36b3c-5ab6-4c63-b63b-f66cb5c9fa5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\direct3d12">
+      <UniqueIdentifier>{f3bc1212-2840-4867-8d4f-8397a18368e4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

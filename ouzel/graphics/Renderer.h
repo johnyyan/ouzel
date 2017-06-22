@@ -63,6 +63,7 @@ namespace ouzel
                 EMPTY,
                 OPENGL,
                 DIRECT3D11,
+                DIRECT3D12,
                 METAL
             };
 
