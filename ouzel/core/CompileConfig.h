@@ -6,10 +6,10 @@
 #if defined(_WIN32)
     #include <sdkddkver.h>
     #define OUZEL_PLATFORM_WINDOWS 1
+    #define OUZEL_SUPPORTS_DIRECT3D 1
     #if _WIN32_WINNT_WIN10
         #define OUZEL_SUPPORTS_DIRECT3D12 1
     #endif
-    #define OUZEL_SUPPORTS_DIRECT3D 1
     #define OUZEL_SUPPORTS_DIRECT3D11 1
     #define OUZEL_SUPPORTS_OPENGL 1
     #define OUZEL_OPENGL_INTERFACE_WGL 1
