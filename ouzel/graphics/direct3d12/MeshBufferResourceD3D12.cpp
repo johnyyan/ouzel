@@ -27,8 +27,8 @@ namespace ouzel
 
             if (dirty)
             {
-                indexBufferD3D11 = static_cast<BufferResourceD3D12*>(indexBuffer);
-                vertexBufferD3D11 = static_cast<BufferResourceD3D12*>(vertexBuffer);
+                indexBufferD3D12 = static_cast<BufferResourceD3D12*>(indexBuffer);
+                vertexBufferD3D12 = static_cast<BufferResourceD3D12*>(vertexBuffer);
 
                 dirty = 0;
             }

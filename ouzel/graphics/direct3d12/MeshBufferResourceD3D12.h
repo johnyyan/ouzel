@@ -28,8 +28,8 @@ namespace ouzel
         protected:
             virtual bool upload() override;
 
-            BufferResourceD3D12* indexBufferD3D11 = nullptr;
-            BufferResourceD3D12* vertexBufferD3D11 = nullptr;
+            BufferResourceD3D12* indexBufferD3D12 = nullptr;
+            BufferResourceD3D12* vertexBufferD3D12 = nullptr;
         };
     } // namespace graphics
 } // namespace ouzel
