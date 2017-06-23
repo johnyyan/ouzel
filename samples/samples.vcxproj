@@ -186,7 +186,7 @@ copy "$(ProjectDir)Resources\*" "$(OutDir)Resources\"</Command>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)Resources"
@@ -224,7 +224,7 @@ copy "$(ProjectDir)Resources\*" "$(OutDir)Resources\"</Command>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)Resources"
@@ -266,7 +266,7 @@ copy "$(ProjectDir)Resources\*" "$(OutDir)Resources\"</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)Resources"
@@ -308,7 +308,7 @@ copy "$(ProjectDir)Resources\*" "$(OutDir)Resources\"</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;opengl32.lib;dxguid.lib;xinput9_1_0.lib;shlwapi.lib;dinput8.lib;dsound.lib;d3d12.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)Resources"

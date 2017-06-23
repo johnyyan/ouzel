@@ -5,6 +5,7 @@
 
 #if OUZEL_SUPPORTS_DIRECT3D12
 
+#include <dxgi1_4.h>
 #include "RendererD3D12.h"
 #include "BlendStateResourceD3D12.h"
 #include "TextureResourceD3D12.h"
@@ -36,6 +37,11 @@ namespace ouzel
         {
             resourceDeleteSet.clear();
             resources.clear();
+
+            if (device)
+            {
+                device->Release();
+            }
         }
 
         bool RendererD3D12::init(Window* newWindow,
@@ -59,7 +65,18 @@ namespace ouzel
                 return false;
             }
 
+            IDXGIFactory4* factory;
+            HRESULT hr = CreateDXGIFactory2(debugRenderer ? DXGI_CREATE_FACTORY_DEBUG : 0, IID_PPV_ARGS(&factory));
+
+            if (FAILED(hr))
+            {
+                Log(Log::Level::ERR) << "Failed to create DXGI factory, error: " << hr;
+                return false;
+            }
+
             // TODO: initialize Direct3D 12
+            
+
 
             std::shared_ptr<Shader> textureShader = std::make_shared<Shader>();
             textureShader->initFromBuffers(std::vector<uint8_t>(std::begin(TEXTURE_PIXEL_SHADER_D3D11), std::end(TEXTURE_PIXEL_SHADER_D3D11)),

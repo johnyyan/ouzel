@@ -44,6 +44,8 @@ namespace ouzel
             virtual ShaderResource* createShader() override;
             virtual MeshBufferResource* createMeshBuffer() override;
             virtual BufferResource* createBuffer() override;
+
+            ID3D12Device* device = nullptr;
         };
     } // namespace graphics
 } // namespace ouzel

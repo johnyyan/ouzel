@@ -53,6 +53,7 @@
 #include "graphics/empty/RendererEmpty.h"
 #include "graphics/opengl/RendererOGL.h"
 #include "graphics/direct3d11/RendererD3D11.h"
+#include "graphics/direct3d12/RendererD3D12.h"
 #include "graphics/metal/RendererMetal.h"
 
 #include "audio/empty/AudioEmpty.h"
@@ -110,6 +111,10 @@ namespace ouzel
             availableDrivers.insert(graphics::Renderer::Driver::OPENGL);
 #endif
 
+#if OUZEL_SUPPORTS_DIRECT3D12
+            availableDrivers.insert(graphics::Renderer::Driver::DIRECT3D12);
+#endif
+
 #if OUZEL_SUPPORTS_DIRECT3D11
             availableDrivers.insert(graphics::Renderer::Driver::DIRECT3D11);
 #endif
@@ -162,6 +167,10 @@ namespace ouzel
             if (availableDrivers.find(graphics::Renderer::Driver::METAL) != availableDrivers.end())
             {
                 settings.renderDriver = graphics::Renderer::Driver::METAL;
+            }
+            else if (availableDrivers.find(graphics::Renderer::Driver::DIRECT3D12) != availableDrivers.end())
+            {
+                settings.renderDriver = graphics::Renderer::Driver::DIRECT3D12;
             }
             else if (availableDrivers.find(graphics::Renderer::Driver::DIRECT3D11) != availableDrivers.end())
             {
@@ -225,6 +234,12 @@ namespace ouzel
     #else
                 renderer.reset(new graphics::RendererOGL());
     #endif
+                break;
+#endif
+#if OUZEL_SUPPORTS_DIRECT3D12
+            case graphics::Renderer::Driver::DIRECT3D12:
+                Log(Log::Level::INFO) << "Using Direct3D 12 render driver";
+                renderer.reset(new graphics::RendererD3D12());
                 break;
 #endif
 #if OUZEL_SUPPORTS_DIRECT3D11
