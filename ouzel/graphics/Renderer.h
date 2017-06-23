@@ -63,7 +63,8 @@ namespace ouzel
                 EMPTY,
                 OPENGL,
                 DIRECT3D11,
-                METAL
+                METAL,
+                VULKAN
             };
 
             enum class DrawMode
